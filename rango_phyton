@@ -1,0 +1,15 @@
+cantidadDeElementos = int(input("Ingrese la cantidad de elementos: ")
+if cantidadElementos <= 0:
+    print("Debe ingresar al menos un elemento. ")
+else:
+    elementos = []
+
+    for i in range(cantidadDeElementos):
+        elemento = float(input(f"Ingrese el elemento {i + 1}: "))
+        elementos.append(elemento)
+                          
+    valor_minimo = min(elementos)
+    valor_maximo = max(elementos)
+
+    rango = valor_maximo - valor_minimo
+    print("El rango de los elementos es: " , rango)
