@@ -1,0 +1,16 @@
+numeros = []
+while True:
+    valores = input("ingrese valores y termine con (.)")
+    
+    if valores == "." :
+        break
+    valor = float(valores)
+    numeros.append(valor)
+
+x = len(numeros)
+if x%2 ==1: 
+    mediana = numeros [x//2]
+else:
+    mediana = str((numeros [x//2-1] + numeros [x//2])/2)
+
+print ("La mediana es : " , mediana)
