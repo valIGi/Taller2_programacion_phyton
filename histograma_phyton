@@ -1,0 +1,17 @@
+numerosNegativos = 0
+numeroPositivos = 0 
+print("Ingrese varios valores y termine con cero: ")
+
+while True:
+    numeros = int(input("Ingrese un valor entero: "))
+    
+    if numeros == 0:
+        break
+    if numeros > 0:
+        numeroPositivos += 1
+    elif numeros < 0:
+        numerosNegativos += 1
+    
+print("Gráfico:")
+print("numeros positivos: ","*" * numeroPositivos)
+print("numeros negativos: ","*" * numerosNegativos)
