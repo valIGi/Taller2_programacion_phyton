@@ -1,0 +1,20 @@
+print("Ejercicios de Tiempo de Viaje")
+tiempoTotal = 0
+
+while True:
+    try:
+        tiempoTrayecto = float(input("Ingresa el tiempo del trayecto en minutos o 0 para finalizar: "))        
+        if tiempoTrayecto == 0:
+            break  
+        elif tiempoTrayecto < 0:
+            print("El tiempo debe ser mayor o igual que 0. ")
+        else:
+            tiempoTotal += tiempoTrayecto  
+    except ValueError:
+        print("Ingresa un número válido. ")
+
+tiempoTotalHoras = tiempoTotal / 60
+#minutos = tiempoTotal % 60
+horas = int(tiempoTotalHoras)
+minutos = int((tiempoTotalHoras - horas) * 60)
+print("El tiempo total es:", horas, ":", minutos, "horas")
